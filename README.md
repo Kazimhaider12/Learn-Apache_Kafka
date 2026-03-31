@@ -13,8 +13,15 @@ For anyone exploring data engineering, backend systems, or real-time platforms, 
 
 https://youtu.be/QI5WRCdp0vs?si=yY5klzqfxLwpNruK
 
+Example 1:
 <img width="688" height="266" alt="Example1_Simple" src="https://github.com/user-attachments/assets/f0d6654b-a348-410b-8e4e-bc2e84961c06" />
+
+Example 2:
+
 <img width="1189" height="439" alt="PracticeExample2" src="https://github.com/user-attachments/assets/ae467967-381f-4e7c-8dc8-6d294d7e76dd" />
+
+Example 3: 
+
 <img width="1137" height="427" alt="PracticeExample3" src="https://github.com/user-attachments/assets/8c9d29b4-7814-4ca0-a325-891010682d59" />
 
 #ApacheKafka #DataEngineering #BigData #Streaming #TechSkills #DeveloperLearning
