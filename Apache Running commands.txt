@@ -1,0 +1,19 @@
+Make sure Open cmd in kafka
+
+1. get id(UUID generate karo)
+
+.\bin\windows\kafka-storage.bat random-uuid
+
+2. Storage format karo (IMPORTANT)
+👉 Controller ke liye:
+.\bin\windows\kafka-storage.bat format -t YOUR_UUID -c .\config\controller.properties
+👉 Broker ke liye:
+.\bin\windows\kafka-storage.bat format -t YOUR_UUID -c .\config\server.properties
+
+3. Kafka start karo
+👉 Controller start:
+.\bin\windows\kafka-server-start.bat .\config\controller.properties
+👉 New CMD → Broker start:
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+--- Kafka Started
