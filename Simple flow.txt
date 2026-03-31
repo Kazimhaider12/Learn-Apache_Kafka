@@ -1,0 +1,24 @@
+1. Create topic
+
+.\bin\windows\kafka-topics.bat --create ^
+--topic test-topic ^
+--bootstrap-server localhost:9092 ^
+--partitions 1 ^
+--replication-factor 1
+
+2. Producer start karo
+.\bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic test-topic
+
+👉 Iske baad tum text type kar sakte ho:
+
+Hello Kafka
+Test Message
+
+
+3. Consumer start karo (NEW CMD window me)
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test-topic --from-beginning
+
+👉 Output:
+
+Hello Kafka
+Test Message
