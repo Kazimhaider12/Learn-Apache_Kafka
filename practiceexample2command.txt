@@ -1,0 +1,47 @@
+1. Create Topic order
+
+.\bin\windows\kafka-topics.bat --create ^
+--topic Orders ^
+--bootstrap-server localhost:9092 ^
+--partitions 2 ^
+--replication-factor 1
+
+2. create producer
+
+Create Topic with 2 Partitions
+
+- Windows CMD me run karo
+- Start Producer with Key-based Messages
+
+Windows CMD:
+
+.\bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic Orders --property parse.key=true --property key.separator=:
+Usage:
+
+Producer me message type karo is format me:
+
+key1:Message for partition 1
+key2:Message for partition 2
+key1:Another message for partition 1
+key2:Another message for partition 2
+key1:Kazim 
+key2:Haider
+
+3. Start Two Consumers in Same Consumer Group
+
+Consumer 1:
+
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic Orders --group og --from-beginning
+
+Consumer 2:
+
+Open new CMD:
+
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic Orders --group og --from-beginning
+
+---------------------------------------------------------------------
+
+List all topics:
+.\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --list
+Describe a specific topic (Orders):
+.\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --topic Orders --describe

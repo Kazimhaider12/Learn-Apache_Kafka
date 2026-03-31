@@ -1,0 +1,11 @@
+Describe a specific consumer group
+
+Windows CMD:
+
+.\bin\windows\kafka-consumer-groups.bat --bootstrap-server localhost:9092 --describe --group og
+
+List all consumer groups
+
+Windows CMD:
+
+.\bin\windows\kafka-consumer-groups.bat --bootstrap-server localhost:9092 --list
